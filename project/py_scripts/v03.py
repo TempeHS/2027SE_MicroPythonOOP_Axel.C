@@ -25,21 +25,15 @@ class LedLight(Pin):
     def toggle(self):
         # method overriding polymorphism of the Super Class
         if self.value() == 0:
-            self.high()
-            if self.__debug:
-                print(f"LED connected to Pin {self.__pin} is high")
+            self.on()
         elif self.value() == 1:
-            self.low()
-            if self.__debug:
-                print(f"LED connected to Pin {self.__pin} is low")
+            self.off()
 
 
 red_light = LedLight(3, False, True)
-green_light = LedLight(6, False, True)
+green_light = LedLight(5, False, False)
+
 while True:
-    red_light.on()
-    green_light.on()
-    sleep(1)
-    red_light.off()
-    green_light.off()
+    red_light.toggle()
+    green_light.toggle()
     sleep(1)

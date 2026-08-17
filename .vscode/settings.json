@@ -32,7 +32,9 @@
     "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.40/emulator/mock/typings",
     "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.40/emulator/mock/micropython",
     "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.44/emulator/mock/typings",
-    "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.44/emulator/mock/micropython"
+    "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.44/emulator/mock/micropython",
+    "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.46/emulator/mock/typings",
+    "/home/vscode/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.3.46/emulator/mock/micropython"
   ],
   "workbench.colorTheme": "Dark+",
   "workbench.iconTheme": "vscode-icons",
