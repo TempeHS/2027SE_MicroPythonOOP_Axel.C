@@ -9,6 +9,7 @@ class LedLight(Pin):
         self.__debug = debug
         self.__pin = pin
         self.__flashing = flashing
+        self.led_light_state
 
     def on(self):
         # method overriding polymorphism of the Super Class
@@ -29,11 +30,27 @@ class LedLight(Pin):
         elif self.value() == 1:
             self.off()
 
+    @property
+    def led_light_state(self):
+        # Getter method
+        return self.value()
+
+    @led_light_state.setter
+    def led_light_state(self, value):
+        # Setter method
+        if value == 1:
+            self.off()
+        elif value == 0:
+            self.on()
+
 
 red_light = LedLight(3, False, True)
 green_light = LedLight(5, False, False)
 
+
+"""
 while True:
     red_light.toggle()
     green_light.toggle()
     sleep(1)
+"""
